@@ -2,8 +2,8 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.2 (2021-09-30)
+------------------
 * removed unused dempendencies and adding dependency from ira_laser_tools
 * Contributors: antoniobrandi
 
