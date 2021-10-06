@@ -2,6 +2,11 @@
 Changelog for package omni_base_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Updates to omni_base_maps in order to generate the folder in the .pal
+* Contributors: antoniobrandi
+
 0.0.3 (2021-10-04)
 ------------------
 
