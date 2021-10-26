@@ -2,6 +2,11 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* changed laser sensor configuration for the final base
+* Contributors: antoniobrandi
+
 0.0.4 (2021-10-06)
 ------------------
 
