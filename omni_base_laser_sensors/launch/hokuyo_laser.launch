@@ -1,0 +1,10 @@
+<launch>
+    <arg name="side"        default="front"/>
+  <arg name="device_number" default="0"/>
+
+    <node name="$(arg side)_hokuyo" pkg="hokuyo_node" type="hokuyo_node" clear_params="true">
+      <rosparam file="$(find pmb2_laser_sensors)/config/hokuyo_urg_04lx_ug01_laser.yaml" command="load"/>
+      <remap from="scan" to="scan_raw"/>
+    </node>
+</launch>
+  
