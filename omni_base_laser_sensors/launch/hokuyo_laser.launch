@@ -3,6 +3,7 @@
   <arg name="device_number" default="0"/>
 
     <node name="$(arg side)_hokuyo" pkg="hokuyo_node" type="hokuyo_node" clear_params="true">
+      <param name="frame_id" value="base_$(arg side)_laser_link"/>
       <rosparam file="$(find omni_base_laser_sensors)/config/hokuyo_urg_04lx_ug01_laser.yaml" command="load"/>
       <remap from="scan" to="scan_$(arg side)_raw"/>
     </node>
