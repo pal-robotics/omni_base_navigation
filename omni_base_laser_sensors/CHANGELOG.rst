@@ -2,6 +2,20 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'hokuyo-support' into 'ferrum-devel'
+  Hokuyo support
+  See merge request robots/omni_base_navigation!1
+* Update hokuyo_urg_04lx_ug01_laser.yaml
+* Assign laser ports
+* Update hokuyo_laser.launch
+* Update hokuyo_laser.launch
+* Update yaml file in launch file
+* Update package.xml
+* Adding specificatios for hokuyo
+* Contributors: David ter Kuile, antoniobrandi, davidterkuile
+
 0.0.5 (2021-10-26)
 ------------------
 * changed laser sensor configuration for the final base
