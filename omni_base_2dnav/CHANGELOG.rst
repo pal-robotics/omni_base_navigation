@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.7 (2022-08-04)
+------------------
 * Merge branch 'fix-rviz-default' into 'ferrum-devel'
   Modify default rviz to show the right topics and not transparent omni_base
   See merge request robots/omni_base_navigation!2
