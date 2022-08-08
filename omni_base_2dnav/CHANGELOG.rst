@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.8 (2022-08-08)
+------------------
 * Merge branch 'update_rviz' into 'ferrum-devel'
   Add advanced navigation file + fix nav rviz + change poi
   See merge request robots/omni_base_navigation!3
