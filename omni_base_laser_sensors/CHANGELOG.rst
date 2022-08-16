@@ -2,6 +2,15 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.9 (2022-08-16)
+------------------
+* Merge branch 'fix/lasers-fov' into 'ferrum-devel'
+  fix lasers fov
+  See merge request robots/omni_base_navigation!5
+* adjusted fov for sick laser scanner
+* fix hokuyo_urg_04lx_ug01_laser fov
+* Contributors: antoniobrandi, josegarcia
+
 0.0.8 (2022-08-08)
 ------------------
 

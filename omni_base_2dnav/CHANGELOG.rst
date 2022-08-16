@@ -2,6 +2,9 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.9 (2022-08-16)
+------------------
+
 0.0.8 (2022-08-08)
 ------------------
 * Merge branch 'update_rviz' into 'ferrum-devel'
