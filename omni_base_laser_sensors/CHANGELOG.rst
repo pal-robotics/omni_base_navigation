@@ -2,6 +2,9 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.0.9 (2022-08-16)
 ------------------
 * Merge branch 'fix/lasers-fov' into 'ferrum-devel'

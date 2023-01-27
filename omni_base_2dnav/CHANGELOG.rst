@@ -2,6 +2,14 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/map-manager' into 'ferrum-devel'
+  Move to map manager
+  See merge request robots/omni_base_navigation!7
+* Move to map manager
+* Contributors: antoniobrandi
+
 0.0.9 (2022-08-16)
 ------------------
 
