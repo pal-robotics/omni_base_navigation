@@ -2,6 +2,14 @@
 Changelog for package omni_base_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'add_pal_office_7th_floor_map' into 'ferrum-devel'
+  Add new pal office map
+  See merge request robots/omni_base_navigation!9
+* Add new pal office map
+* Contributors: antoniobrandi, thomaspeyrucain
+
 0.0.10 (2023-01-27)
 -------------------
 

@@ -2,6 +2,9 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.0.10 (2023-01-27)
 -------------------
 * Merge branch 'feat/map-manager' into 'ferrum-devel'
