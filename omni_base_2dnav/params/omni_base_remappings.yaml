@@ -8,6 +8,6 @@ odom_topic : "/mobile_base_controller/odom"  # Default: "/odom"
 use_sim_time : True # Default: True
 robot_radius : 0.275  # Default: 0.275
 scan_topic : "scan"  # Default: "scan"
-# @TODO: odom does not exist
-odom_frame : "odom # Default: "odom"
+# @TODO: odom does not exist, pending controller plugin
+odom_frame : "odom" # Default: "odom"
 base_footprint_frame : "base_footprint" # Default: "base_footprint"

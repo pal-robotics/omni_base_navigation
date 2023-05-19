@@ -1,7 +1,8 @@
 sick_tim_561_ros_driver:
   ros__parameters:
     frame_id: "base_laser_link"
+    intensity: true
+    time_offset: -0.08
     min_ang: -2.35619 # !degrees -135 (not supported)
     max_ang:  2.35619 # !degrees  135 (not supported)
-    intensity: true
     range_max: 25.0
