@@ -5,4 +5,4 @@ time_offset: -0.08
 min_ang: !degrees -135
 max_ang: !degrees  135
 
-range_max: 10.0
+range_max: 25.0

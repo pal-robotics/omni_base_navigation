@@ -9,7 +9,7 @@ scan_filter_chain:
   type: laser_filters/LaserScanRangeFilter
   params:
     lower_threshold: 0.05
-    upper_threshold: 10.0
+    upper_threshold: 25.0
     lower_replacement_value: -.inf
     upper_replacement_value: .inf
 
