@@ -7,6 +7,8 @@
   <arg name="public_sim"     default="false"/>
   <arg name="subtype"        default="custom"/>
   <arg name="rgbd_sensors"   default="false"/>
+  <arg name="robot_namespace"  default=""/>
+  <arg name="multiple"       default="false"/>
 
   <!-- Navigation -->
   <include file="$(find pal_navigation_cfg_omni_base)/launch/move_base.launch">
@@ -14,6 +16,8 @@
     <arg name="global_planner"   value="$(arg global_planner)"/>
     <arg name="local_planner"    value="$(arg local_planner)"/>
     <arg name="public_sim"       value="$(arg public_sim)"/>
+    <arg name="robot_namespace"  value="$(arg robot_namespace)"/>
+    <arg name="multiple"         value="$(arg multiple)"/>
   </include>
 
 </launch>
