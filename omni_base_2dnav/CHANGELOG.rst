@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.13 (2023-09-13)
+-------------------
 * Merge branch 'feat/omni-base-multi' into 'ferrum-devel'
   added support to omni_base multi robot
   See merge request robots/omni_base_navigation!11
