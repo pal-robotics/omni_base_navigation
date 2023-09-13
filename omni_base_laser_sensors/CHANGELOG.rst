@@ -2,6 +2,9 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.0.12 (2023-09-06)
 -------------------
 * Merge branch 'feat/sick-571' into 'ferrum-devel'
