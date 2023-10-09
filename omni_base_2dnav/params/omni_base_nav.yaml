@@ -2,7 +2,7 @@
 #* If not set, following default parameters will be used
 
 bt_navigator: navigate_w_replanning_and_recovery  # Default: navigate_w_replanning_and_recovery
-controller: dwb_w_progress_checker_and_goal_checker # Default: dwb_w_progress_checker_and_goal_checker
+controller: regulated_pp # Default: dwb_w_progress_checker_and_goal_checker
 global_costmap: global  # Default: global
 local_costmap: local  # Default: local
 map_server: map  # Default: map
@@ -10,4 +10,4 @@ planner : navfn # Default navfn
 recovery_behaviors: spin_backup_wait  # Default spin_backup_wait
 slam: slam_toolbox # Default slam_toolbox
 map_server: map  # Default: map
-localization: amcl_diff # Default: amcl_diff
+localization: amcl_omni # Default: amcl_diff
