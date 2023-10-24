@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+import os
 from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription
@@ -25,7 +25,7 @@ from launch.actions import (
     DeclareLaunchArgument,
 )
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch_ros.actions import Node
+
 
 
 def generate_launch_description():
@@ -56,43 +56,12 @@ def generate_launch_description():
         )
     )
 
-    laser_config_path = PathJoinSubstitution(
-        substitutions=[
-            omni_base_laser_sensors_dir,
-            "config",
-            PythonExpression(
-                ['"', LaunchConfiguration("laser"), '_filter.yaml"']
-            ),
-        ]
+    laser_filters_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            omni_base_laser_sensors_dir, 'launch', 'laser_filters.launch.py')]
+        )
     )
-    # @TODO: https://index.ros.org/p/ira_laser_tools/github-iralabdisco-ira_laser_tools/#humble
-    # multi_laser_node = Node(
-    #     package="ira_laser_tools",
-    #     executable="laserscan_multi_merger",
-    #     output="screen",
-    #     parameters=[{'destination_frame': 'virtual_base_laser_link',
-    #                  'cloud_destination_topic': '/merged_cloud',
-    #                  'scan_destination_topic': '/scan_raw',
-    #                  'laserscan_topics': '/scan_front_raw /scan_rear_raw',
-    #                  'time_increment': '0.0',
-    #                  'scan_time': '0.0',
-    #                  'range_min': '0.05',
-    #                  'range_max': '25.0',
-    #                  'angle_min': '-3.1459',
-    #                  'angle_max': '3.1459',
-    #                  'angle_increment': '0.005769'
-    #                  }],
-    # )
 
-    laser_filter_node = Node(
-        package="laser_filters",
-        # name = 'laser_filter',        # Name changed produces multiple nodes with the same name.
-        # https://answers.ros.org/question/344141/ros2-launch-creates-two-nodes-of-same-type/
-        executable="scan_to_scan_filter_chain",
-        output="screen",
-        remappings=[("scan", "scan_raw"), ("scan_filtered", "scan")],
-        parameters=[laser_config_path],
-    )
 
     # Create the launch description
     ld = LaunchDescription()
@@ -102,8 +71,6 @@ def generate_launch_description():
 
     # Add the actions to launch all of the laser nodes
     ld.add_action(laser_launch)
-    # @TODO: https://index.ros.org/p/ira_laser_tools/github-iralabdisco-ira_laser_tools/#humble
-    # ld.add_action(multi_laser_node)
-    ld.add_action(laser_filter_node)
+    ld.add_action(laser_filters_launch)
 
     return ld

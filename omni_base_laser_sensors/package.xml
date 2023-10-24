@@ -11,8 +11,7 @@
 
   <exec_depend>sick_tim</exec_depend>
   <exec_depend>laser_filters</exec_depend>
-  <!--@TODO: https://index.ros.org/p/ira_laser_tools/github-iralabdisco-ira_laser_tools/#humble-->
-  <!--<exec_depend>ira_laser_tools</exec_depend>-->
+  <exec_depend>ira_laser_tools</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
