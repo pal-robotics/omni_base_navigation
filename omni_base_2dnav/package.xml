@@ -5,6 +5,7 @@
   <description>omni_base-specific launch files needed to run
     navigation on the omni_base robot.</description>
   <author email="yue.erro@pal-robotics.com">Yue Erro</author>
+  <author email="andrea.capodacqua@pal-robotics.com">Andrea Capodacqua</author>
   <maintainer email="yue.erro@pal-robotics.com">Yue Erro</maintainer>
   <license>Apache License 2.0</license>
 
