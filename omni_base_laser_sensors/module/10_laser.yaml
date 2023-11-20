@@ -1,3 +1,0 @@
-laser:
-  launch: "tiago_laser_sensors laser.launch.py
-           laser:=@laser_model@"
