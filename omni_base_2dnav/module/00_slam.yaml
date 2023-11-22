@@ -1,0 +1,5 @@
+slam:
+  launch: "omni_base_2dnav omni_base_nav_bringup.launch.py 
+          use_sim_time:=false 
+          slam:=true 
+          rviz:=false"

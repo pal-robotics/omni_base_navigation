@@ -9,6 +9,11 @@ find_package(ament_cmake_pal QUIET)
 
 ament_auto_find_build_dependencies()
 
+if(pal_module_cmake_FOUND)
+  pal_register_modules(module/00_navigation.yaml)
+  pal_register_modules(module/00_slam.yaml)
+endif()
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   ament_lint_auto_find_test_dependencies()
