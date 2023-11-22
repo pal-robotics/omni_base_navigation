@@ -59,7 +59,7 @@ def generate_launch_description():
                      'angle_min': -3.1459,
                      'angle_max': 3.1459,
                      'angle_increment': 0.005769,
-                    }],
+                    }]
     )
 
     laser_filter_node = Node(

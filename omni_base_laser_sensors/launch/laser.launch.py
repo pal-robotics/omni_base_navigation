@@ -26,8 +26,6 @@ from launch.actions import (
 )
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
-
-
 def generate_launch_description():
     omni_base_laser_sensors_dir = get_package_share_directory("omni_base_laser_sensors")
     laser_model = LaunchConfiguration("laser")
@@ -61,7 +59,6 @@ def generate_launch_description():
             omni_base_laser_sensors_dir, 'launch', 'laser_filters.launch.py')]
         )
     )
-
 
     # Create the launch description
     ld = LaunchDescription()
