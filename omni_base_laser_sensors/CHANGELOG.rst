@@ -2,8 +2,8 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.0 (2023-11-23)
+------------------
 * Merge branch 'feat/use-module' into 'humble-devel'
   Feat/use module
   See merge request robots/omni_base_navigation!12
