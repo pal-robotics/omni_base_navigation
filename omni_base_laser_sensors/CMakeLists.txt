@@ -2,8 +2,11 @@ cmake_minimum_required(VERSION 3.8)
 project(omni_base_laser_sensors)
 
 find_package(ament_cmake_auto REQUIRED)
-
 ament_auto_find_build_dependencies()
+
+if(pal_module_cmake_FOUND)
+  pal_register_modules(module/00_laser.yaml)
+endif()
 
 if(BUILD_TESTING)
   ament_auto_find_test_dependencies()

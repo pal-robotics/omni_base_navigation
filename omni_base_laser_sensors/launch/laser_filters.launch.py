@@ -25,7 +25,8 @@ from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    omni_base_laser_sensors_dir = get_package_share_directory("omni_base_laser_sensors")
+    omni_base_laser_sensors_dir = get_package_share_directory(
+        "omni_base_laser_sensors")
     laser_model = LaunchConfiguration("laser")
 
     declare_laser_cmd = DeclareLaunchArgument(
@@ -59,7 +60,7 @@ def generate_launch_description():
                      'angle_min': -3.1459,
                      'angle_max': 3.1459,
                      'angle_increment': 0.005769,
-                    }],
+                     }],
     )
 
     laser_filter_node = Node(

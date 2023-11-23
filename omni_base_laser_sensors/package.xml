@@ -10,6 +10,9 @@
 
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
 
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+
+
   <exec_depend>sick_tim</exec_depend>
   <exec_depend>laser_filters</exec_depend>
   <exec_depend>ira_laser_tools</exec_depend>
