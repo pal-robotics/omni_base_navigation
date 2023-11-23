@@ -2,6 +2,27 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/use-module' into 'humble-devel'
+  Feat/use module
+  See merge request robots/omni_base_navigation!12
+* cosmetic
+* cosmetic
+* using correct prefix
+* use module
+* omni_base ROS 2
+* added laser cfg files
+* added ira_laser_tool new rviz config
+* fix: Typo and time_offset in sick 561
+* add missing laser sensor launch.py files
+* omnibase laser sensors to ROS 2:
+  + colcon
+  + yaml
+  + launch.py
+  - discontinued hokuyo URG-04LX-UG01
+* Contributors: Noel Jimenez, YueErro, andreacapodacqua
+
 0.0.11 (2023-03-06)
 -------------------
 

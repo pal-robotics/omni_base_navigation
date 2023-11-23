@@ -2,6 +2,26 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/use-module' into 'humble-devel'
+  Feat/use module
+  See merge request robots/omni_base_navigation!12
+* removed use_sim_time slam module
+* removed navigation module
+* add navigation module
+* update copyright
+* omni_base ROS 2
+* added ira_laser_tool new rviz config
+* fix launch
+* fix: Typo and time_offset in sick 561
+* Add TODO and scan_topic to scan
+* omnibase 2dnav to ROS 2:
+  + colcon
+  + launch.py
+  + pal_navigation_cfg
+* Contributors: Noel Jimenez, YueErro, andreacapodacqua
+
 0.0.11 (2023-03-06)
 -------------------
 

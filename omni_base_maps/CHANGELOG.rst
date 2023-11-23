@@ -2,6 +2,14 @@
 Changelog for package omni_base_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* omni_base ROS 2
+* omnibase maps to ROS2:
+  + colcon
+  - building
+* Contributors: YueErro, andreacapodacqua
+
 0.0.11 (2023-03-06)
 -------------------
 * Merge branch 'add_pal_office_7th_floor_map' into 'ferrum-devel'

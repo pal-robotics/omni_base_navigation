@@ -2,6 +2,12 @@
 Changelog for package omni_base_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* omni_base ROS 2
+* omni base navigation to colcon
+* Contributors: YueErro, andreacapodacqua
+
 0.0.11 (2023-03-06)
 -------------------
 
