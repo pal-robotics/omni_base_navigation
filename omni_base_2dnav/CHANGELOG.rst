@@ -2,6 +2,14 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/modules-ros2' into 'humble-devel'
+  moved omni modules from 00 to 10
+  See merge request robots/omni_base_navigation!14
+* moved omni modules from 00 to 10
+* Contributors: Noel Jimenez, andreacapodacqua
+
 2.0.0 (2023-11-23)
 ------------------
 * Merge branch 'feat/use-module' into 'humble-devel'

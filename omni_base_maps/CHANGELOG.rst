@@ -2,6 +2,9 @@
 Changelog for package omni_base_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.0 (2023-11-23)
 ------------------
 * omni_base ROS 2
