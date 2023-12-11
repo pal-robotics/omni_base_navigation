@@ -2,8 +2,8 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.1 (2023-12-11)
+------------------
 * Merge branch 'fix/modules-ros2' into 'humble-devel'
   moved omni modules from 00 to 10
   See merge request robots/omni_base_navigation!14
