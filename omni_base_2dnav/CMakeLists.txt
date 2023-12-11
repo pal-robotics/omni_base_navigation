@@ -10,7 +10,7 @@ find_package(ament_cmake_pal QUIET)
 ament_auto_find_build_dependencies()
 
 if(pal_module_cmake_FOUND)
-  pal_register_modules(module/00_slam.yaml)
+  pal_register_modules(module/10_slam.yaml)
 endif()
 
 if(BUILD_TESTING)
