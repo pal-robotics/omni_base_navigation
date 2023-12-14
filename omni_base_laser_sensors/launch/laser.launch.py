@@ -28,7 +28,8 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
-    omni_base_laser_sensors_dir = get_package_share_directory("omni_base_laser_sensors")
+    omni_base_laser_sensors_dir = get_package_share_directory(
+        "omni_base_laser_sensors")
     laser_model = LaunchConfiguration("laser")
 
     declare_laser_cmd = DeclareLaunchArgument(
@@ -42,7 +43,7 @@ def generate_launch_description():
             PathJoinSubstitution(
                 substitutions=[
                     omni_base_laser_sensors_dir,
-                    "launch","sick_laser.launch.py"
+                    "launch", "sick_laser.launch.py"
                 ]
             )
         ),
@@ -57,7 +58,7 @@ def generate_launch_description():
             PathJoinSubstitution(
                 substitutions=[
                     omni_base_laser_sensors_dir,
-                    "launch","sick_laser.launch.py"
+                    "launch", "sick_laser.launch.py"
                 ]
             )
         ),
