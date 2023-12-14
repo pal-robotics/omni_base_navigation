@@ -2,6 +2,21 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/ros2-laser-sensors' into 'humble-devel'
+  Fix/ros2 laser sensors
+  See merge request robots/omni_base_navigation!15
+* revert last 4 commits
+* cosmetic
+* cosmetic
+* cosmetic
+* refactor launch of the sick
+* cosmetic
+* fix lasers in real robot
+* removed old sick and added 571 launch file
+* Contributors: andreacapodacqua
+
 2.0.1 (2023-12-11)
 ------------------
 * Merge branch 'fix/modules-ros2' into 'humble-devel'
