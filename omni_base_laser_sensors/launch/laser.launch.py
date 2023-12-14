@@ -42,14 +42,7 @@ def generate_launch_description():
             PathJoinSubstitution(
                 substitutions=[
                     omni_base_laser_sensors_dir,
-                    "launch",
-                    PythonExpression(
-                        [
-                            '"',
-                            laser_model,
-                            '_laser.launch.py"',
-                        ]
-                    ),
+                    "launch","sick_laser.launch.py"
                 ]
             )
         ),
@@ -64,14 +57,7 @@ def generate_launch_description():
             PathJoinSubstitution(
                 substitutions=[
                     omni_base_laser_sensors_dir,
-                    "launch",
-                    PythonExpression(
-                        [
-                            '"',
-                            laser_model,
-                            '_laser.launch.py"',
-                        ]
-                    ),
+                    "launch","sick_laser.launch.py"
                 ]
             )
         ),

@@ -21,12 +21,14 @@ from launch.actions import DeclareLaunchArgument
 from launch.substitutions import (
     LaunchConfiguration,
     PythonExpression,
+    PathJoinSubstitution,
 )
 from launch_ros.actions import Node
-
+from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     omni_base_laser_sensors_dir = get_package_share_directory("omni_base_laser_sensors")
+    laser_model = LaunchConfiguration("laser")
     side = LaunchConfiguration("side")
     device_number = LaunchConfiguration("device_number")
 
@@ -41,22 +43,24 @@ def generate_launch_description():
         default_value="0",
         description="Specify the device number of the laser in the robot",
     )
-
+    
+    
     node = Node(
         package="sick_tim",
-        name=PythonExpression(['"', side, '_sick_tim_571_ros_driver"']),
+        name=PythonExpression(['"', side, '_', laser_model, '_ros_driver".replace("-","_")']),
         executable="sick_tim551_2050001",
         output="screen",
         remappings=[("scan", PythonExpression(['"scan_', side, '_raw"']))],
-        parameters=[os.path.join(
-                      omni_base_laser_sensors_dir, "config", "sick_tim571_laser.yaml"
-                     ),
+        parameters=[PathJoinSubstitution(
+                            [ omni_base_laser_sensors_dir, "config" , PythonExpression(['"', laser_model, '_laser.yaml"'])],
+     
+                    ),
                     {'frame_id': PythonExpression(['"base_', side, '_laser_link"']),
-                     'device_number': device_number
-                     }
-                    ],
-    )
-
+                            'device_number': device_number
+                    },
+        ]
+                  )   
+                
     # Create the launch description
     ld = LaunchDescription()
 
