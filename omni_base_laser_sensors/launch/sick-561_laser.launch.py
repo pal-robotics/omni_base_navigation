@@ -44,7 +44,7 @@ def generate_launch_description():
 
     node = Node(
         package="sick_tim",
-        name=PythonExpression([ '"',side,'_sick_tim_561_ros_driver"']),
+        name=PythonExpression(['"', side, '_sick_tim_561_ros_driver"']),
         executable="sick_tim551_2050001",
         output="screen",
         remappings=[("scan", PythonExpression(['"scan_', side, '_raw"']))],

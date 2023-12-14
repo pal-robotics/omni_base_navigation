@@ -54,8 +54,8 @@ def generate_launch_description():
             )
         ),
         launch_arguments={
-            "side":"front",
-            "device_number":"0",
+            "side": "front",
+            "device_number": "0",
         }.items()
     )
 
@@ -76,8 +76,8 @@ def generate_launch_description():
             )
         ),
         launch_arguments={
-            "side":"rear",
-            "device_number":"1",
+            "side": "rear",
+            "device_number": "1",
         }.items()
     )
 
