@@ -2,8 +2,8 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.2 (2023-12-14)
+------------------
 * Merge branch 'fix/ros2-laser-sensors' into 'humble-devel'
   Fix/ros2 laser sensors
   See merge request robots/omni_base_navigation!15
