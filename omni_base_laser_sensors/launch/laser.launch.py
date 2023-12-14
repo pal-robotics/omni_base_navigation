@@ -37,7 +37,7 @@ def generate_launch_description():
         description="Specify the type of laser in the robot",
     )
 
-    laser_launch = IncludeLaunchDescription(
+    front_laser_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution(
                 substitutions=[
@@ -52,7 +52,33 @@ def generate_launch_description():
                     ),
                 ]
             )
-        )
+        ),
+        launch_arguments={
+            "side": "front",
+            "device_number": "0",
+        }.items()
+    )
+
+    rear_laser_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution(
+                substitutions=[
+                    omni_base_laser_sensors_dir,
+                    "launch",
+                    PythonExpression(
+                        [
+                            '"',
+                            laser_model,
+                            '_laser.launch.py"',
+                        ]
+                    ),
+                ]
+            )
+        ),
+        launch_arguments={
+            "side": "rear",
+            "device_number": "1",
+        }.items()
     )
 
     laser_filters_launch = IncludeLaunchDescription(
@@ -68,7 +94,8 @@ def generate_launch_description():
     ld.add_action(declare_laser_cmd)
 
     # Add the actions to launch all of the laser nodes
-    ld.add_action(laser_launch)
+    ld.add_action(front_laser_launch)
+    ld.add_action(rear_laser_launch)
     ld.add_action(laser_filters_launch)
 
     return ld

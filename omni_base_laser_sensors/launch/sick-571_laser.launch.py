@@ -44,12 +44,12 @@ def generate_launch_description():
 
     node = Node(
         package="sick_tim",
-        name=PythonExpression(['"', side, '_sick_tim_561_ros_driver"']),
+        name=PythonExpression(['"', side, '_sick_tim_571_ros_driver"']),
         executable="sick_tim551_2050001",
         output="screen",
         remappings=[("scan", PythonExpression(['"scan_', side, '_raw"']))],
         parameters=[os.path.join(
-                      omni_base_laser_sensors_dir, "config", "sick_tim561_laser.yaml"
+                      omni_base_laser_sensors_dir, "config", "sick_tim571_laser.yaml"
                      ),
                     {'frame_id': PythonExpression(['"base_', side, '_laser_link"']),
                      'device_number': device_number
