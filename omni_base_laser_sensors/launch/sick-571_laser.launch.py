@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import os
 
 from ament_index_python.packages import get_package_share_directory
 
@@ -20,15 +21,12 @@ from launch.actions import DeclareLaunchArgument
 from launch.substitutions import (
     LaunchConfiguration,
     PythonExpression,
-    PathJoinSubstitution,
 )
 from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    omni_base_laser_sensors_dir = get_package_share_directory(
-        "omni_base_laser_sensors")
-    laser_model = LaunchConfiguration("laser")
+    omni_base_laser_sensors_dir = get_package_share_directory("omni_base_laser_sensors")
     side = LaunchConfiguration("side")
     device_number = LaunchConfiguration("device_number")
 
@@ -46,20 +44,17 @@ def generate_launch_description():
 
     node = Node(
         package="sick_tim",
-        name=PythonExpression(
-            ['"', side, '_', laser_model, '_ros_driver".replace("-","_")']),
+        name=PythonExpression(['"', side, '_sick_tim_571_ros_driver"']),
         executable="sick_tim551_2050001",
         output="screen",
         remappings=[("scan", PythonExpression(['"scan_', side, '_raw"']))],
-        parameters=[PathJoinSubstitution(
-            [omni_base_laser_sensors_dir, "config", PythonExpression(
-                ['"', laser_model, '_laser.yaml"'])],
-
-        ),
-            {'frame_id': PythonExpression(['"base_', side, '_laser_link"']),
-             'device_number': device_number
-             },
-        ]
+        parameters=[os.path.join(
+                      omni_base_laser_sensors_dir, "config", "sick_tim571_laser.yaml"
+                     ),
+                    {'frame_id': PythonExpression(['"base_', side, '_laser_link"']),
+                     'device_number': device_number
+                     }
+                    ],
     )
 
     # Create the launch description
