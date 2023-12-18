@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.0 (2023-12-18)
+------------------
 * Merge branch 'feat/move-base-flex' into 'ferrum-devel'
   using move base flex
   See merge request robots/omni_base_navigation!8
