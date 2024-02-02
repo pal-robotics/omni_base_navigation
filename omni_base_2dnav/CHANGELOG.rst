@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.3 (2024-02-02)
+------------------
 * Merge branch 'feat/register-components' into 'humble-devel'
   using components and parameters
   See merge request robots/omni_base_navigation!16
