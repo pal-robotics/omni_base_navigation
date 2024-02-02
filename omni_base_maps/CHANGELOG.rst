@@ -2,6 +2,14 @@
 Changelog for package omni_base_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/register-components' into 'humble-devel'
+  using components and parameters
+  See merge request robots/omni_base_navigation!16
+* using components and parameters
+* Contributors: antoniobrandi
+
 2.0.2 (2023-12-14)
 ------------------
 
