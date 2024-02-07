@@ -1,0 +1,8 @@
+nodes:
+    slam_toolbox_sync:
+      app: slam_toolbox_sync
+      params: [slam_toolbox_sync]
+
+    map_saver:
+      app: map_saver
+      params: [map_saver]

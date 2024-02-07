@@ -1,4 +1,4 @@
 slam:
-  launch: "omni_base_2dnav omni_base_nav_bringup.launch.py 
-          slam:=true 
-          rviz:=false"
+  launch: "pal_nav2_bringup nav_bringup.launch.py 
+          params_file:=/home/pal/deployed_ws/omni_base_2dnav/share/omni_base_2dnav/params/omni_base_slam.yaml
+          robot_name:=@robot_type@"
