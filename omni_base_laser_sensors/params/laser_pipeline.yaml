@@ -1,0 +1,13 @@
+containers:
+  laser_container:
+    sick_driver:
+      app: sick_driver
+      params: [sick_tim]
+    ira_laser_tools: 
+      app: ira_laser_tools  
+      params: [default] 
+
+nodes:
+  pal_laser_filters:
+    app: pal_laser_filters
+    params: [laser_filters_default]
