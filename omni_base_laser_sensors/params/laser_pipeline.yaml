@@ -8,3 +8,6 @@ nodes:
   ira_laser_tools: 
     app: ira_laser_tools  
     params: [default] 
+  lifecycle_manager_laser:
+    app: lifecycle_manager
+    params: [lifecycle_manager_laser]
