@@ -13,12 +13,5 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-if(pal_navigation_cfg_cmake_FOUND)
-  pal_navigation_cfg_register_params(
-    PARAMS config/sick_tim561_laser.yaml
-    PARAMS config/sick_tim571_laser.yaml
-  )
-endif()
-
-ament_auto_package(INSTALL_TO_SHARE config launch)
+ament_auto_package(INSTALL_TO_SHARE config launch params)
 

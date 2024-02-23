@@ -1,0 +1,11 @@
+containers:
+  laser_container:
+    sick_571_front:
+      app: sick_driver
+      params: [sick_571_front]
+    sick_571_rear:
+      app: sick_driver
+      params: [sick_571_rear]
+    ira_laser_tools: 
+      app: ira_laser_tools  
+      params: [default] 

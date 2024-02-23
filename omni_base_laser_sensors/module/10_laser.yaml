@@ -1,3 +1,6 @@
 laser:
-  launch: "omni_base_laser_sensors laser.launch.py
-           laser:=@laser_model@"
+  launch: "pal_nav2_bringup nav_bringup.launch.py 
+          params_file:=/home/pal/deployed_ws/omni_base_laser_sensors/share/omni_base_laser_sensors/params/laser_pipeline.yaml
+          robot_name:=@robot_type@"
+
+
