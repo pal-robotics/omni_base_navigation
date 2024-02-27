@@ -3,5 +3,3 @@ laser:
           params_pkg:=omni_base_laser_sensors
           params_file:=laser_pipeline.yaml
           robot_name:=@robot_type@"
-
-
