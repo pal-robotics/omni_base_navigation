@@ -11,8 +11,8 @@ ament_auto_find_build_dependencies()
 
 if(pal_module_cmake_FOUND)
   pal_register_modules(module/10_slam.yaml
-                       module/10_navigation.yaml
-                       module/10_navigation_w_composition.yaml)
+                      module/10_navigation.yaml
+                      module/10_navigation_w_composition.yaml)
 endif()
 
 if(BUILD_TESTING)
