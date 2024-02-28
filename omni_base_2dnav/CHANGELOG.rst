@@ -2,6 +2,17 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'aca/experiments-module' into 'humble-devel'
+  Aca/experiments module
+  See merge request robots/omni_base_navigation!17
+* new load of params in module
+* linters and omni base radius
+* remappings laser pipeline
+* modules experiments
+* Contributors: andreacapodacqua
+
 2.0.3 (2024-02-02)
 ------------------
 * Merge branch 'feat/register-components' into 'humble-devel'

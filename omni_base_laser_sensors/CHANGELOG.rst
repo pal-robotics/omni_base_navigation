@@ -2,6 +2,21 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'aca/experiments-module' into 'humble-devel'
+  Aca/experiments module
+  See merge request robots/omni_base_navigation!17
+* removed unused launch and config files
+* cosmetic
+* new load of params in module
+* added laser filters to pipeline
+* remappings laser pipeline
+* add lifecycle manager
+* laser pipeline
+* added laser pipeline
+* Contributors: andreacapodacqua
+
 2.0.3 (2024-02-02)
 ------------------
 
