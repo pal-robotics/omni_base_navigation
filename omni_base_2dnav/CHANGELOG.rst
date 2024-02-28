@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.4 (2024-02-28)
+------------------
 * Merge branch 'aca/experiments-module' into 'humble-devel'
   Aca/experiments module
   See merge request robots/omni_base_navigation!17
