@@ -2,6 +2,14 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/laser-pipeline' into 'humble-devel'
+  renamed apps and removed unuseful args
+  See merge request robots/omni_base_navigation!18
+* renamed apps and removed unuseful args
+* Contributors: andreacapodacqua
+
 2.0.4 (2024-02-28)
 ------------------
 * Merge branch 'aca/experiments-module' into 'humble-devel'
