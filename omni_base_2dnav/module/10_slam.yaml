@@ -1,5 +1,4 @@
 slam:
-  launch: "pal_nav2_bringup nav_bringup.launch.py 
-          params_pkg:=omni_base_2dnav
+  launch: "pal_nav2_bringup nav_bringup.launch.py
           params_file:=omni_base_slam.yaml
           robot_name:=@robot_type@"
