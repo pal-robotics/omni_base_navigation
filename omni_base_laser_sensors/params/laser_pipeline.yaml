@@ -5,8 +5,8 @@ nodes:
   sick_571_rear:
     app: sick_driver
     params: [sick_571_rear]
-  ira_laser_tools: 
-    app: ira_laser_tools  
+  laserscan_multi_merger: 
+    app: laserscan_multi_merger  
     params: [default] 
   pal_laser_filters:
     app: pal_laser_filters
