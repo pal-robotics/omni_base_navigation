@@ -2,8 +2,8 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.5 (2024-03-05)
+------------------
 * Merge branch 'fix/laser-pipeline' into 'humble-devel'
   renamed apps and removed unuseful args
   See merge request robots/omni_base_navigation!18
