@@ -2,6 +2,9 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.5 (2024-03-05)
 ------------------
 * Merge branch 'fix/laser-pipeline' into 'humble-devel'
