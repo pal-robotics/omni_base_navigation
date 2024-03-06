@@ -2,8 +2,8 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.6 (2024-03-06)
+------------------
 * Merge branch 'feat/dlo-integration' into 'humble-devel'
   integrate dlo_ros
   See merge request robots/omni_base_navigation!19
