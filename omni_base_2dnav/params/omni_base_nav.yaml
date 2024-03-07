@@ -16,7 +16,7 @@ nodes:
     params: [navigate_w_replanning_and_recovery]
   controller_server:
     app: controller_server
-    params: [dwb_w_progress_checker_and_goal_checker, local_costmap_omni]
+    params: [mppi_omni, local_costmap_omni]
   planner_server:
     app: planner_server
     params: [navfn, global_costmap_omni]
@@ -26,6 +26,9 @@ nodes:
   waypoint_follower:
     app: waypoint_follower
     params: [wait_at_waypoint]
+  pal_bt_navigator:
+    app: pal_bt_navigator
+    params: [navigate_through_waypoints]
   lifecycle_manager_navigation:
     app: lifecycle_manager
     params: [lifecycle_manager_navigation]
@@ -37,7 +40,7 @@ nodes:
     params: [map_saver]
   amcl:
     app: amcl
-    params: [amcl_diff]
+    params: [amcl_omni]
   lifecycle_manager_localization:
     app: lifecycle_manager
     params: [lifecycle_manager_localization]
