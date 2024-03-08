@@ -10,9 +10,11 @@ find_package(ament_cmake_pal QUIET)
 ament_auto_find_build_dependencies()
 
 if(pal_module_cmake_FOUND)
-  pal_register_modules(module/10_slam.yaml
+  pal_register_modules(module/10_localization.yaml
+                      module/10_localization_w_composition.yaml
                       module/10_navigation.yaml
-                      module/10_navigation_w_composition.yaml)
+                      module/10_navigation_w_composition.yaml
+                      module/10_slam.yaml)
 endif()
 
 if(BUILD_TESTING)
