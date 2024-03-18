@@ -14,6 +14,6 @@ nodes:
   dlo_ros:
     app: dlo_ros
     params: [default]
-  lifecycle_manager_laser:
+  lifecycle_manager_laser_omni:
     app: lifecycle_manager
-    params: [lifecycle_manager_laser]
+    params: [lifecycle_manager_laser_omni]
