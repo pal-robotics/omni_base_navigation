@@ -35,7 +35,6 @@ def navigation_bringup(context, *args, **kwargs):
     omni_base_2dnav = get_package_share_directory("omni_base_2dnav")
     omni_base_maps = get_package_share_directory("omni_base_maps")
     nav2_bringup = get_package_share_directory("nav2_bringup")
-    pal_nav2_bringup = get_package_share_directory("pal_nav2_bringup")
 
     if is_public_sim == "True" or is_public_sim == "true":
         nav2_bringup_launch = IncludeLaunchDescription(
@@ -72,7 +71,9 @@ def navigation_bringup(context, *args, **kwargs):
         actions.append(nav2_bringup_launch)
         actions.append(rviz_bringup_launch)
     else:
-        pal_nav2_bringup_launch = IncludeLaunchDescription(
+        pal_nav2_bringup = get_package_share_directory("pal_nav2_bringup")
+
+        laser_bringup_launch = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(
                     pal_nav2_bringup,
@@ -80,10 +81,72 @@ def navigation_bringup(context, *args, **kwargs):
                     "nav_bringup.launch.py",
                 )
             ),
-            condition=UnlessCondition(is_public_sim),
+            launch_arguments={
+                "params_pkg": "omni_base_laser_sensors",
+                "params_file": "laser_pipeline_sim.yaml",
+                "robot_name": "omni_base",
+                "rviz": "False"
+            }.items(),
+        )
+        
+        nav_bringup_launch = IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(
+                    pal_nav2_bringup,
+                    "launch",
+                    "nav_bringup.launch.py",
+                )
+            ),
+            launch_arguments={
+                "params_pkg": "omni_base_2dnav",
+                "params_file": "omni_base_nav.yaml",
+                "robot_name": "omni_base",
+                "remappings_file": os.path.join(
+                    get_package_share_directory("omni_base_2dnav"),
+                    "params",
+                    "omni_base_remappings_sim.yaml"),
+                "rviz": "true"
+            }.items(),
         )
 
-        actions.append(pal_nav2_bringup_launch)
+        slam_bringup_launch = IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(
+                    pal_nav2_bringup,
+                    "launch",
+                    "nav_bringup.launch.py",
+                )
+            ),
+            launch_arguments={
+                "params_pkg": "omni_base_2dnav",
+                "params_file": "omni_base_slam.yaml",
+                "robot_name": "omni_base",
+                "rviz": "False"
+            }.items(),
+            condition=IfCondition(LaunchConfiguration('slam')),
+        )
+        
+        loc_bringup_launch = IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(
+                    pal_nav2_bringup,
+                    "launch",
+                    "nav_bringup.launch.py",
+                )
+            ),
+            launch_arguments={
+                "params_pkg": "omni_base_2dnav",
+                "params_file": "omni_base_loc.yaml",
+                "robot_name": "omni_base",
+                "rviz": "False"
+            }.items(),
+            condition=UnlessCondition(LaunchConfiguration('slam')),
+        )
+        
+        actions.append(laser_bringup_launch)
+        actions.append(nav_bringup_launch)
+        actions.append(slam_bringup_launch)
+        actions.append(loc_bringup_launch)
 
     return actions
 
@@ -95,12 +158,25 @@ def generate_launch_description():
         default_value="false",
         description="Whether or not you are using a public simulation",
     )
+    
+    declare_world_name_arg = DeclareLaunchArgument(
+        "world_name", default_value="",
+        description="Specify world name, we'll convert to full path"
+    )
+
+    declare_slam_arg = DeclareLaunchArgument(
+        "slam",
+        default_value="False",
+        description="Whether or not you are using SLAM",
+    )
 
     navigation_bringup_launch = OpaqueFunction(function=navigation_bringup)
 
     # Create the launch description and populate
     ld = LaunchDescription()
     ld.add_action(declare_is_public_sim_arg)
+    ld.add_action(declare_world_name_arg)
     ld.add_action(navigation_bringup_launch)
+    ld.add_action(declare_slam_arg)
 
     return ld
