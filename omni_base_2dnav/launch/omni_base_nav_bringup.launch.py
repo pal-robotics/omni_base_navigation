@@ -92,7 +92,7 @@ def navigation_bringup(context, *args, **kwargs):
                 "rviz": "False"
             }.items(),
         )
-        
+
         nav_bringup_launch = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(
@@ -133,7 +133,7 @@ def navigation_bringup(context, *args, **kwargs):
             }.items(),
             condition=IfCondition(LaunchConfiguration('slam')),
         )
-        
+
         loc_bringup_launch = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(
@@ -154,7 +154,7 @@ def navigation_bringup(context, *args, **kwargs):
             }.items(),
             condition=UnlessCondition(LaunchConfiguration('slam')),
         )
-        
+
         actions.append(laser_bringup_launch)
         actions.append(nav_bringup_launch)
         actions.append(slam_bringup_launch)
@@ -170,7 +170,7 @@ def generate_launch_description():
         default_value="False",
         description="Whether or not you are using a public simulation",
     )
-    
+
     declare_world_name_arg = DeclareLaunchArgument(
         "world_name", default_value="",
         description="Specify world name, we'll convert to full path"
