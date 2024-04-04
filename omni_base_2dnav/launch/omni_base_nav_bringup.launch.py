@@ -83,8 +83,12 @@ def navigation_bringup(context, *args, **kwargs):
             ),
             launch_arguments={
                 "params_pkg": "omni_base_laser_sensors",
-                "params_file": "laser_pipeline_sim.yaml",
+                "params_file": "laser_pipeline_sim_omni.yaml",
                 "robot_name": "omni_base",
+                "remappings_file": os.path.join(
+                    get_package_share_directory("omni_base_2dnav"),
+                    "params",
+                    "omni_base_remappings_sim.yaml"),
                 "rviz": "False"
             }.items(),
         )
@@ -121,6 +125,10 @@ def navigation_bringup(context, *args, **kwargs):
                 "params_pkg": "omni_base_2dnav",
                 "params_file": "omni_base_slam.yaml",
                 "robot_name": "omni_base",
+                "remappings_file": os.path.join(
+                    get_package_share_directory("omni_base_2dnav"),
+                    "params",
+                    "omni_base_remappings_sim.yaml"),
                 "rviz": "False"
             }.items(),
             condition=IfCondition(LaunchConfiguration('slam')),
@@ -138,6 +146,10 @@ def navigation_bringup(context, *args, **kwargs):
                 "params_pkg": "omni_base_2dnav",
                 "params_file": "omni_base_loc.yaml",
                 "robot_name": "omni_base",
+                "remappings_file": os.path.join(
+                    get_package_share_directory("omni_base_2dnav"),
+                    "params",
+                    "omni_base_remappings_sim.yaml"),
                 "rviz": "False"
             }.items(),
             condition=UnlessCondition(LaunchConfiguration('slam')),
@@ -155,7 +167,7 @@ def generate_launch_description():
     """Launch Navigation common application Robot + Simulation."""
     declare_is_public_sim_arg = DeclareLaunchArgument(
         "is_public_sim",
-        default_value="false",
+        default_value="False",
         description="Whether or not you are using a public simulation",
     )
     
@@ -176,7 +188,7 @@ def generate_launch_description():
     ld = LaunchDescription()
     ld.add_action(declare_is_public_sim_arg)
     ld.add_action(declare_world_name_arg)
-    ld.add_action(navigation_bringup_launch)
     ld.add_action(declare_slam_arg)
+    ld.add_action(navigation_bringup_launch)
 
     return ld
