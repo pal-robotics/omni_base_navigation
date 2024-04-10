@@ -1,3 +1,15 @@
+# Configure the Navigation, Localization and SLAM
+# nodes:
+#   <NODE-NAME>:
+#     app: <APP-NAME>
+#     params: [<LIST-YAML-PARAM-FILES>]
+#
+# containers:
+#   <CONTAINER-NAME>
+#     <NODE-NAME>:
+#       app: <APP-NAME>
+#       params: [<LIST-YAML-PARAM-FILES>]
+
 containers:
   laser_container:
     sick_571_front:
@@ -17,4 +29,4 @@ containers:
       params: [default]
     lifecycle_manager_laser:
       app: lifecycle_manager
-      params: [lifecycle_manager_laser]
+      params: [lifecycle_manager_laser_multi]

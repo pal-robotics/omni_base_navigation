@@ -11,12 +11,15 @@
 #       params: [<LIST-YAML-PARAM-FILES>]
 
 nodes:
-  slam_toolbox_sync:
-    app: slam_toolbox_sync
-    params: [slam_toolbox_sync]
+  map_server:
+    app: map_server
+    params: [map_server]
   map_saver:
     app: map_saver
     params: [map_saver]
-  lifecycle_manager_slam:
+  amcl:
+    app: amcl
+    params: [amcl_omni]
+  lifecycle_manager_localization:
     app: lifecycle_manager
-    params: [lifecycle_manager_slam]
+    params: [lifecycle_manager_localization]

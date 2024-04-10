@@ -10,13 +10,16 @@
 #       app: <APP-NAME>
 #       params: [<LIST-YAML-PARAM-FILES>]
 
-nodes:
-  slam_toolbox_sync:
-    app: slam_toolbox_sync
-    params: [slam_toolbox_sync]
-  map_saver:
-    app: map_saver
-    params: [map_saver]
-  lifecycle_manager_slam:
+nodes: 
+  laserscan_multi_merger: 
+    app: laserscan_multi_merger  
+    params: [default] 
+  pal_laser_filters:
+    app: pal_laser_filters
+    params: [default]
+  dlo_ros:
+    app: dlo_ros
+    params: [default]
+  lifecycle_manager_laser:
     app: lifecycle_manager
-    params: [lifecycle_manager_slam]
+    params: [lifecycle_manager_laser_sim_multi]
