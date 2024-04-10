@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.7 (2024-04-10)
+------------------
 * Merge branch 'feat/ros2-params' into 'humble-devel'
   Feat/ros2 params
   See merge request robots/omni_base_navigation!20
