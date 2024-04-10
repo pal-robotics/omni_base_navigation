@@ -67,7 +67,7 @@ def navigation_bringup(context, *args, **kwargs):
                 ),
                 "use_sim_time": "True",
             }.items(),
-            condition=IfCondition(LaunchConfiguration('slam')),
+            condition=IfCondition(LaunchConfiguration("slam")),
         )
 
         loc_bringup_launch = IncludeLaunchDescription(
@@ -86,7 +86,7 @@ def navigation_bringup(context, *args, **kwargs):
                 ),
                 "use_sim_time": "True",
             }.items(),
-            condition=UnlessCondition(LaunchConfiguration('slam')),
+            condition=UnlessCondition(LaunchConfiguration("slam")),
         )
 
         rviz_bringup_launch = IncludeLaunchDescription(
@@ -165,7 +165,7 @@ def navigation_bringup(context, *args, **kwargs):
                     "omni_base_remappings_sim.yaml"),
                 "rviz": "False"
             }.items(),
-            condition=IfCondition(LaunchConfiguration('slam')),
+            condition=IfCondition(LaunchConfiguration("slam")),
         )
 
         loc_bringup_launch = IncludeLaunchDescription(
@@ -186,7 +186,7 @@ def navigation_bringup(context, *args, **kwargs):
                     "omni_base_remappings_sim.yaml"),
                 "rviz": "False"
             }.items(),
-            condition=UnlessCondition(LaunchConfiguration('slam')),
+            condition=UnlessCondition(LaunchConfiguration("slam")),
         )
 
         actions.append(laser_bringup_launch)
