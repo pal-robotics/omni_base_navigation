@@ -13,8 +13,8 @@
 containers:
   navigation_container:
     bt_navigator:
-        app: bt_navigator
-        params: [navigate_w_replanning_and_recovery]
+      app: bt_navigator
+      params: [navigate_w_replanning_and_recovery]
     controller_server:
       app: controller_server
       params: [rpp_shim, local_costmap]

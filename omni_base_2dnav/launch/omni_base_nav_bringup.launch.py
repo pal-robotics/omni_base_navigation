@@ -32,14 +32,16 @@ def navigation_bringup(context, *args, **kwargs):
     is_public_sim = LaunchConfiguration("is_public_sim").perform(context)
     world_name = LaunchConfiguration("world_name").perform(context)
 
+    pal_nav2_bringup = get_package_share_directory("pal_nav2_bringup")
     omni_base_2dnav = get_package_share_directory("omni_base_2dnav")
     omni_base_maps = get_package_share_directory("omni_base_maps")
     nav2_bringup = get_package_share_directory("nav2_bringup")
 
     if is_public_sim == "True" or is_public_sim == "true":
+
         nav2_bringup_launch = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
-                os.path.join(nav2_bringup, "launch", "bringup_launch.py")
+                os.path.join(nav2_bringup, "launch", "navigation_launch.py")
             ),
             launch_arguments={
                 "params_file": os.path.join(
@@ -53,7 +55,38 @@ def navigation_bringup(context, *args, **kwargs):
                 ),
                 "use_sim_time": "True",
             }.items(),
-            condition=IfCondition(is_public_sim),
+        )
+
+        slam_bringup_launch = IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(nav2_bringup, "launch", "slam_launch.py")
+            ),
+            launch_arguments={
+                "params_file": os.path.join(
+                    omni_base_2dnav, "params", "omni_base_nav_public_sim.yaml"
+                ),
+                "use_sim_time": "True",
+            }.items(),
+            condition=IfCondition(LaunchConfiguration('slam')),
+        )
+
+        loc_bringup_launch = IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(nav2_bringup, "launch", "localization_launch.py")
+            ),
+            launch_arguments={
+                "params_file": os.path.join(
+                    omni_base_2dnav, "params", "omni_base_nav_public_sim.yaml"
+                ),
+                "map": os.path.join(
+                    omni_base_maps,
+                    "configurations",
+                    world_name,
+                    "map.yaml",
+                ),
+                "use_sim_time": "True",
+            }.items(),
+            condition=UnlessCondition(LaunchConfiguration('slam')),
         )
 
         rviz_bringup_launch = IncludeLaunchDescription(
@@ -69,9 +102,10 @@ def navigation_bringup(context, *args, **kwargs):
         )
 
         actions.append(nav2_bringup_launch)
+        actions.append(loc_bringup_launch)
+        actions.append(slam_bringup_launch)
         actions.append(rviz_bringup_launch)
     else:
-        pal_nav2_bringup = get_package_share_directory("pal_nav2_bringup")
 
         laser_bringup_launch = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
@@ -83,7 +117,7 @@ def navigation_bringup(context, *args, **kwargs):
             ),
             launch_arguments={
                 "params_pkg": "omni_base_laser_sensors",
-                "params_file": "laser_pipeline_sim_omni.yaml",
+                "params_file": "laser_pipeline_sim_multi.yaml",
                 "robot_name": "omni_base",
                 "remappings_file": os.path.join(
                     get_package_share_directory("omni_base_2dnav"),
@@ -171,11 +205,6 @@ def generate_launch_description():
         description="Whether or not you are using a public simulation",
     )
 
-    declare_world_name_arg = DeclareLaunchArgument(
-        "world_name", default_value="",
-        description="Specify world name, we'll convert to full path"
-    )
-
     declare_slam_arg = DeclareLaunchArgument(
         "slam",
         default_value="False",
@@ -187,7 +216,6 @@ def generate_launch_description():
     # Create the launch description and populate
     ld = LaunchDescription()
     ld.add_action(declare_is_public_sim_arg)
-    ld.add_action(declare_world_name_arg)
     ld.add_action(declare_slam_arg)
     ld.add_action(navigation_bringup_launch)
 
