@@ -2,6 +2,26 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/ros2-params' into 'humble-devel'
+  Feat/ros2 params
+  See merge request robots/omni_base_navigation!20
+* cosmetic
+* launch indipendent nav loc and slam public sim
+* linters
+* pipelines for navigation
+* fix launch private sim
+* fix and change params names
+* fix dep
+* default nav config for omni_base
+* splitted navigation and localization pipeline and modules
+* added state_lattice
+* rviz config
+* fine tuning params
+* tuning parameters ros2
+* Contributors: andreacapodacqua
+
 2.0.6 (2024-03-06)
 ------------------
 

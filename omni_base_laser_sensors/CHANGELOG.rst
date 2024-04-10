@@ -2,6 +2,20 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/ros2-params' into 'humble-devel'
+  Feat/ros2 params
+  See merge request robots/omni_base_navigation!20
+* launch indipendent nav loc and slam public sim
+* added dlo dep
+* pipelines for navigation
+* fix and change params names
+* fix laser pipeline
+* renamed lifecycle manager
+* corrected dep
+* Contributors: andreacapodacqua
+
 2.0.6 (2024-03-06)
 ------------------
 * Merge branch 'feat/dlo-integration' into 'humble-devel'
