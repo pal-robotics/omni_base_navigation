@@ -22,7 +22,7 @@ nodes:
     params: [default] 
   pal_laser_filters:
     app: pal_laser_filters
-    params: [laser_filters_default]
+    params: [default]
   dlo_ros:
     app: dlo_ros
     params: [default]
