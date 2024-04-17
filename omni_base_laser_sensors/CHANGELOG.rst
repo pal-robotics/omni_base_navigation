@@ -2,8 +2,8 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.8 (2024-04-17)
+------------------
 * Merge branch 'fix/laser-params' into 'humble-devel'
   fix laser params name
   See merge request robots/omni_base_navigation!22
