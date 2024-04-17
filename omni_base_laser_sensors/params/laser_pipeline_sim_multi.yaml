@@ -14,9 +14,6 @@ nodes:
   laserscan_multi_merger: 
     app: laserscan_multi_merger  
     params: [default] 
-    variables: 
-      scan_raw_topic_0: "/scan_rear_raw"
-      scan_raw_topic_1: "/scan_front_raw"
   pal_laser_filters:
     app: pal_laser_filters
     params: [default]
