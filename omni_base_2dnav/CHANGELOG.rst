@@ -2,6 +2,16 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/laser-params' into 'humble-devel'
+  fix laser params name
+  See merge request robots/omni_base_navigation!22
+* added dep
+* new variables names
+* using variables for pipelines
+* Contributors: andreacapodacqua
+
 2.0.7 (2024-04-10)
 ------------------
 * Merge branch 'feat/ros2-params' into 'humble-devel'
