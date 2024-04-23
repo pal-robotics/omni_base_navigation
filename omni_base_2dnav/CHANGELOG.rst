@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.9 (2024-04-23)
+------------------
 * Merge branch 'fix/variables' into 'humble-devel'
   Fix/variables
   See merge request robots/omni_base_navigation!23
