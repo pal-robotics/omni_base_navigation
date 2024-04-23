@@ -2,6 +2,14 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/move-modules-to-00' into 'humble-devel'
+  moved modules to 00
+  See merge request robots/omni_base_navigation!25
+* moved modules to 00
+* Contributors: andreacapodacqua
+
 2.0.9 (2024-04-23)
 ------------------
 * Merge branch 'fix/variables' into 'humble-devel'
