@@ -2,6 +2,15 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/variables' into 'humble-devel'
+  Fix/variables
+  See merge request robots/omni_base_navigation!23
+* using variables lifecycle manager
+* fix variables, laser angles
+* Contributors: andreacapodacqua
+
 2.0.8 (2024-04-17)
 ------------------
 * Merge branch 'fix/laser-params' into 'humble-devel'
