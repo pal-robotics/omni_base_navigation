@@ -12,7 +12,6 @@
 
   <exec_depend>omni_base_laser_sensors</exec_depend>
   <exec_depend>omni_base_2dnav</exec_depend>
-  <exec_depend>omni_base_maps</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>

@@ -34,7 +34,7 @@ def navigation_bringup(context, *args, **kwargs):
 
     pal_nav2_bringup = get_package_share_directory("pal_nav2_bringup")
     omni_base_2dnav = get_package_share_directory("omni_base_2dnav")
-    omni_base_maps = get_package_share_directory("omni_base_maps")
+    pal_maps = get_package_share_directory("pal_maps")
     nav2_bringup = get_package_share_directory("nav2_bringup")
 
     if is_public_sim == "True" or is_public_sim == "true":
@@ -46,12 +46,6 @@ def navigation_bringup(context, *args, **kwargs):
             launch_arguments={
                 "params_file": os.path.join(
                     omni_base_2dnav, "params", "omni_base_nav_public_sim.yaml"
-                ),
-                "map": os.path.join(
-                    omni_base_maps,
-                    "configurations",
-                    world_name,
-                    "map.yaml",
                 ),
                 "use_sim_time": "True",
             }.items(),
@@ -79,7 +73,7 @@ def navigation_bringup(context, *args, **kwargs):
                     omni_base_2dnav, "params", "omni_base_nav_public_sim.yaml"
                 ),
                 "map": os.path.join(
-                    omni_base_maps,
+                    pal_maps,
                     "configurations",
                     world_name,
                     "map.yaml",
