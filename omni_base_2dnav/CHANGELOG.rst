@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.11 (2024-04-26)
+-------------------
 * Merge branch 'abr/fix/new-launch-pal' into 'humble-devel'
   Adapt to the new launch_pal
   See merge request robots/omni_base_navigation!27
