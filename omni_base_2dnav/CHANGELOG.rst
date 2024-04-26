@@ -2,6 +2,15 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'abr/fix/new-launch-pal' into 'humble-devel'
+  Adapt to the new launch_pal
+  See merge request robots/omni_base_navigation!27
+* Update omni_base_remappings.yaml
+* Adapt to the new launch_pal
+* Contributors: antoniobrandi
+
 2.0.10 (2024-04-23)
 -------------------
 * Merge branch 'feat/move-modules-to-00' into 'humble-devel'
