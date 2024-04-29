@@ -2,6 +2,11 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* deprecate omni_base_maps
+* Contributors: antoniobrandi
+
 2.0.11 (2024-04-26)
 -------------------
 * Merge branch 'abr/fix/new-launch-pal' into 'humble-devel'

@@ -2,6 +2,11 @@
 Changelog for package omni_base_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* deprecate omni_base_maps
+* Contributors: antoniobrandi
+
 2.0.11 (2024-04-26)
 -------------------
 
