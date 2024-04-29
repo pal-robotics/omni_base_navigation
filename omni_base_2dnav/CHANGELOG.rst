@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.12 (2024-04-29)
+-------------------
 * deprecate omni_base_maps
 * Contributors: antoniobrandi
 
