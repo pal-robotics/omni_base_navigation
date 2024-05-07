@@ -1,0 +1,21 @@
+# Configure the Navigation, Localization and SLAM
+# nodes:
+#   <NODE-NAME>:
+#     app: <APP-NAME>
+#     params: [<LIST-YAML-PARAM-FILES>]
+#
+# containers:
+#   <CONTAINER-NAME>
+#     <NODE-NAME>:
+#       app: <APP-NAME>
+#       params: [<LIST-YAML-PARAM-FILES>]
+
+nodes: 
+  roof_rgbd_camera:
+    app: realsense
+    params: [default_435_roof]
+    namespace: "/roof_rgbd_camera"
+  base_rgbd_camera:
+    app: realsense
+    params: [default_435_base]
+    namespace: "/base_rgbd_camera"
