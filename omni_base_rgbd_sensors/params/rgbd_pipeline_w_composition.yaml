@@ -14,9 +14,9 @@ containers:
   rgbd_container:
     roof_rgbd_camera:
       app: realsense
-      params: [d435i_rgbd_roof]
-      namespace: "/roof_rgbd_camera"
+      params: [d435i_rgbd_low_contrast]
+      namespace: "roof_rgbd_camera"
     base_rgbd_camera:
       app: realsense
-      params: [d435i_rgbd_base]
-      namespace: "/base_rgbd_camera"
+      params: [d435i_rgbd_high_accuracy]
+      namespace: "base_rgbd_camera"
