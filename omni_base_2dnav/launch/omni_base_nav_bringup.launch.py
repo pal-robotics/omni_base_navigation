@@ -32,7 +32,6 @@ def navigation_bringup(context, *args, **kwargs):
     is_public_sim = LaunchConfiguration("is_public_sim").perform(context)
     world_name = LaunchConfiguration("world_name").perform(context)
 
-    pal_nav2_bringup = get_package_share_directory("pal_nav2_bringup")
     omni_base_2dnav = get_package_share_directory("omni_base_2dnav")
     pal_maps = get_package_share_directory("pal_maps")
     nav2_bringup = get_package_share_directory("nav2_bringup")
@@ -101,6 +100,7 @@ def navigation_bringup(context, *args, **kwargs):
         actions.append(rviz_bringup_launch)
     else:
 
+        pal_nav2_bringup = get_package_share_directory("pal_nav2_bringup")
         laser_bringup_launch = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(
