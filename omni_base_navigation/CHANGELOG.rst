@@ -2,6 +2,9 @@
 Changelog for package omni_base_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.14 (2024-06-03)
 -------------------
 
