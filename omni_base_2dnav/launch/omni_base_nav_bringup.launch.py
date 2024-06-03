@@ -73,7 +73,7 @@ def navigation_bringup(context, *args, **kwargs):
                 ),
                 "map": os.path.join(
                     pal_maps,
-                    "configurations",
+                    "maps",
                     world_name,
                     "map.yaml",
                 ),
