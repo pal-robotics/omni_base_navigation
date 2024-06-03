@@ -2,6 +2,11 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Using laser footprint filter
+* Contributors: antoniobrandi
+
 2.0.13 (2024-05-29)
 -------------------
 

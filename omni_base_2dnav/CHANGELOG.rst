@@ -2,6 +2,9 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.13 (2024-05-29)
 -------------------
 * fix public sim
