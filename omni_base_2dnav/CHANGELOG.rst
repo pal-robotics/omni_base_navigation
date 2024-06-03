@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.15 (2024-06-03)
+-------------------
 * Update omni_base_2dnav/params/omni_base_nav.yaml, omni_base_2dnav/params/omni_base_nav_w_composition.yaml
 * Contributors: antoniobrandi
 
