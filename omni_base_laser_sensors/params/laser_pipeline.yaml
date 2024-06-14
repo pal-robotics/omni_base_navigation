@@ -15,14 +15,14 @@ nodes:
     app: sick_driver
     params: [sick_571]
     variables:
-      device_number: 0
+      device_number: ${device_number_laser_0}
       frame_id: "base_rear_laser_link"
       scan_topic: "/scan_rear_raw"
   sick_571_front:
     app: sick_driver
     params: [sick_571]
     variables:
-      device_number: 1
+      device_number: ${device_number_laser_1}
       frame_id: "base_front_laser_link"
       scan_topic: "/scan_front_raw"
   laserscan_multi_merger: 
