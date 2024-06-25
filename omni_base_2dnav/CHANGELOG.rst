@@ -2,6 +2,11 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* move rviz in nav launch file
+* Contributors: antoniobrandi
+
 2.0.16 (2024-06-17)
 -------------------
 * Fix pal_maps path
