@@ -24,6 +24,7 @@ from launch.actions import (
 )
 from launch.conditions import IfCondition, UnlessCondition
 from launch.substitutions import LaunchConfiguration
+from launch_ros.actions import Node
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
@@ -91,7 +92,6 @@ def navigation_bringup(context, *args, **kwargs):
                     omni_base_2dnav, "config", "rviz", "navigation.rviz"
                 ),
             }.items(),
-            condition=IfCondition(is_public_sim),
         )
 
         actions.append(nav2_bringup_launch)
@@ -114,10 +114,9 @@ def navigation_bringup(context, *args, **kwargs):
                 "params_file": "laser_pipeline_sim_multi.yaml",
                 "robot_name": "omni_base",
                 "remappings_file": os.path.join(
-                    get_package_share_directory("omni_base_2dnav"),
+                    omni_base_2dnav,
                     "params",
                     "omni_base_remappings_sim.yaml"),
-                "rviz": "False"
             }.items(),
         )
 
@@ -134,10 +133,9 @@ def navigation_bringup(context, *args, **kwargs):
                 "params_file": "omni_base_nav.yaml",
                 "robot_name": "omni_base",
                 "remappings_file": os.path.join(
-                    get_package_share_directory("omni_base_2dnav"),
+                    omni_base_2dnav,
                     "params",
                     "omni_base_remappings_sim.yaml"),
-                "rviz": "true"
             }.items(),
         )
 
@@ -154,10 +152,9 @@ def navigation_bringup(context, *args, **kwargs):
                 "params_file": "omni_base_slam.yaml",
                 "robot_name": "omni_base",
                 "remappings_file": os.path.join(
-                    get_package_share_directory("omni_base_2dnav"),
+                    omni_base_2dnav,
                     "params",
                     "omni_base_remappings_sim.yaml"),
-                "rviz": "False"
             }.items(),
             condition=IfCondition(LaunchConfiguration("slam")),
         )
@@ -175,18 +172,30 @@ def navigation_bringup(context, *args, **kwargs):
                 "params_file": "omni_base_loc.yaml",
                 "robot_name": "omni_base",
                 "remappings_file": os.path.join(
-                    get_package_share_directory("omni_base_2dnav"),
+                    omni_base_2dnav,
                     "params",
                     "omni_base_remappings_sim.yaml"),
-                "rviz": "False"
             }.items(),
             condition=UnlessCondition(LaunchConfiguration("slam")),
+        )
+
+        rviz_node = Node(
+            package="rviz2",
+            executable="rviz2",
+            arguments=["-d", os.path.join(
+                omni_base_2dnav,
+                "config",
+                "rviz",
+                "navigation.rviz",
+            )],
+            output="screen",
         )
 
         actions.append(laser_bringup_launch)
         actions.append(nav_bringup_launch)
         actions.append(slam_bringup_launch)
         actions.append(loc_bringup_launch)
+        actions.append(rviz_node)
 
     return actions
 
