@@ -2,6 +2,11 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* using costmap with filters
+* Contributors: antoniobrandi
+
 2.0.17 (2024-06-25)
 -------------------
 * move rviz in nav launch file
