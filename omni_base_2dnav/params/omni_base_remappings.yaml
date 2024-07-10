@@ -19,3 +19,5 @@ scan_topic : "/scan"
 scan_raw_topic: "/scan_raw"
 scan_raw_topic_0: "/scan_rear_raw"
 scan_raw_topic_1: "/scan_front_raw"
+device_number_laser_0: 0
+device_number_laser_1: 1
