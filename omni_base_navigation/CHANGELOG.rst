@@ -2,8 +2,8 @@
 Changelog for package omni_base_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.0 (2024-07-17)
+------------------
 * added rgbd support
 * Contributors: andreacapodacqua
 

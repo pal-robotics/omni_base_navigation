@@ -2,8 +2,8 @@
 Changelog for package omni_base_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.0 (2024-07-17)
+------------------
 * fix version
 * added pal_module_cmake log
 * using remappings for rgbd and laser pipeline
