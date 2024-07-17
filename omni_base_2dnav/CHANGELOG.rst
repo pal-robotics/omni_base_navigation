@@ -2,6 +2,14 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* reorganized remappings file
+* naming convention
+* added device_number_laser
+* using remappings for rgbd and laser pipeline
+* Contributors: andreacapodacqua
+
 2.0.19 (2024-07-09)
 -------------------
 * Add warning for pal_module_cmake not found

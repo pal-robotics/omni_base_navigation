@@ -2,6 +2,14 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* naming convention
+* update variables names laser pipeline w components
+* fixed variables names
+* using remappings for rgbd and laser pipeline
+* Contributors: andreacapodacqua
+
 2.0.19 (2024-07-09)
 -------------------
 * Add warning for pal_module_cmake not found
