@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.1.1 (2024-07-19)
+------------------
 * fix laser frames
 * Contributors: andreacapodacqua
 
