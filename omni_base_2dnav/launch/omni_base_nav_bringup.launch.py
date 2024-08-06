@@ -62,7 +62,7 @@ def public_nav_function(context, *args, **kwargs):
 
     nav2_bringup_launch = include_scoped_launch_py_description(
         pkg_name="nav2_bringup",
-        paths=['launch', "navigation_launch.py"],
+        paths=["launch", "navigation_launch.py"],
         launch_arguments={
             "params_file": param_file,
             "use_sim_time": "True"
