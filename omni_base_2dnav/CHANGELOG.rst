@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.2.0 (2024-08-06)
+------------------
 * Unify quotation marks
 * Unify quotation marks
 * restructure launch file
