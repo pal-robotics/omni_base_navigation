@@ -110,7 +110,7 @@ def private_nav_function(context, *args, **kwargs):
 
     nav_bringup_launch = include_scoped_launch_py_description(
         pkg_name="pal_nav2_bringup",
-        paths=['launch', "nav_bringup.launch.py"],
+        paths=["launch", "nav_bringup.launch.py"],
         launch_arguments={
             "params_pkg": "omni_base_2dnav",
             "params_file": "omni_base_nav.yaml",
