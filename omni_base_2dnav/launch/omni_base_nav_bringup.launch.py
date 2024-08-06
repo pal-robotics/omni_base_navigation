@@ -101,6 +101,8 @@ def public_nav_function(context, *args, **kwargs):
     actions.append(slam_bringup_launch)
     actions.append(rviz_bringup_launch)
 
+    return actions
+
 
 def private_nav_function(context, *args, **kwargs):
     actions = []
