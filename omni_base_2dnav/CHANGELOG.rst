@@ -2,6 +2,13 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Unify quotation marks
+* Unify quotation marks
+* restructure launch file
+* Contributors: Aina, antoniobrandi
+
 2.1.1 (2024-07-19)
 ------------------
 * fix laser frames
