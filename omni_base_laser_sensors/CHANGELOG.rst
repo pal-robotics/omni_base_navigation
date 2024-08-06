@@ -2,6 +2,9 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.2.0 (2024-08-06)
 ------------------
 
