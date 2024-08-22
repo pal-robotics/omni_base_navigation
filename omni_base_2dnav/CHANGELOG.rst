@@ -2,6 +2,11 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added docking link to variables
+* Contributors: antoniobrandi
+
 2.2.1 (2024-08-06)
 ------------------
 * fix public sim
