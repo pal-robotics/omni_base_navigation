@@ -36,6 +36,7 @@ class LaunchArguments(LaunchArgumentsBase):
     is_public_sim: DeclareLaunchArgument = CommonArgs.is_public_sim
     world_name: DeclareLaunchArgument = CommonArgs.world_name
     slam: DeclareLaunchArgument = CommonArgs.slam
+    advanced_navigation: DeclareLaunchArgument = CommonArgs.advanced_navigation
 
 
 def generate_launch_description():
@@ -153,17 +154,18 @@ def private_nav_function(context, *args, **kwargs):
         }
     )
 
-    rviz_node = Node(
-        package="rviz2",
-        executable="rviz2",
-        arguments=["-d", os.path.join(
-            omni_base_2dnav,
-            "config",
-            "rviz",
-            "navigation.rviz",
-        )],
-        output="screen",
-    )
+    rviz_node =  Node(
+            condition = UnlessCondition(LaunchConfiguration("advanced_navigation")),
+            package="rviz2",
+            executable="rviz2",
+            arguments=["-d", os.path.join(
+                omni_base_2dnav,
+                "config",
+                "rviz",
+                "navigation.rviz",
+            )],
+            output="screen",
+         )
 
     actions.append(laser_bringup_launch)
     actions.append(nav_bringup_launch)
