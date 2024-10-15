@@ -154,8 +154,8 @@ def private_nav_function(context, *args, **kwargs):
         }
     )
 
-    rviz_node =  Node(
-            condition = UnlessCondition(LaunchConfiguration("advanced_navigation")),
+    rviz_node = Node(
+            condition=UnlessCondition(LaunchConfiguration("advanced_navigation")),
             package="rviz2",
             executable="rviz2",
             arguments=["-d", os.path.join(
