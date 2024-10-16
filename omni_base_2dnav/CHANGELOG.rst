@@ -2,6 +2,14 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Apply 1 suggestion(s) to 1 file(s)
+* Apply 1 suggestion(s) to 1 file(s)
+* linters
+* added unless condition to rviz
+* Contributors: antoniobrandi, martinaannicelli
+
 2.3.0 (2024-08-22)
 ------------------
 * added docking link to variables
