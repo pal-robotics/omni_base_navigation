@@ -165,7 +165,7 @@ def private_nav_function(context, *args, **kwargs):
             "navigation.rviz",
         )],
         output="screen",
-     )
+    )
 
     actions.append(laser_bringup_launch)
     actions.append(nav_bringup_launch)
