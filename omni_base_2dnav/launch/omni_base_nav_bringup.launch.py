@@ -155,17 +155,17 @@ def private_nav_function(context, *args, **kwargs):
     )
 
     rviz_node = Node(
-            condition=UnlessCondition(LaunchConfiguration("advanced_navigation")),
-            package="rviz2",
-            executable="rviz2",
-            arguments=["-d", os.path.join(
-                omni_base_2dnav,
-                "config",
-                "rviz",
-                "navigation.rviz",
-            )],
-            output="screen",
-         )
+        condition=UnlessCondition(LaunchConfiguration("advanced_navigation")),
+        package="rviz2",
+        executable="rviz2",
+        arguments=["-d", os.path.join(
+            omni_base_2dnav,
+            "config",
+            "rviz",
+            "navigation.rviz",
+        )],
+        output="screen",
+     )
 
     actions.append(laser_bringup_launch)
     actions.append(nav_bringup_launch)
