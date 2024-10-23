@@ -2,6 +2,11 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* using MPPI
+* Contributors: andreacapodacqua
+
 2.4.0 (2024-10-16)
 ------------------
 * Apply 1 suggestion(s) to 1 file(s)
