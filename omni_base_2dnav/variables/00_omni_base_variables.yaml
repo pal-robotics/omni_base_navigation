@@ -1,9 +1,6 @@
-#* Remappings that will be applied to all the Navigation,
+#* Variables that will be used to configure the Navigation,
 #* SLAM, Localization and sensors parameters for TIAGo OMNI Base Robot
-
-# As today use_sim_time can only be set from the launch file
-# https://github.com/ros-planning/navigation2/blob/main/nav2_bringup/launch/navigation_launch.py#L111
-use_sim_time : False
+use_sim_time : True
 global_frame : "map"
 base_link_frame : "base_link"
 base_footprint_frame : "base_footprint"
@@ -23,9 +20,15 @@ laser_frame : "virtual_base_laser_link"
 #laser_0 remappings:
 scan_raw_topic_0: "/scan_rear_raw"
 laser_frame_0: "base_rear_laser_link"
-device_number_laser_0: 0
 
 #laser_1 remappings:
 scan_raw_topic_1: "/scan_front_raw"
 laser_frame_1: "base_front_laser_link"
-device_number_laser_1: 1
+
+#camera_0 remappings:
+name_camera_0: "roof_rgbd_camera"
+serial_no_camera_0: ""
+
+#camera_1 remappings:
+name_camera_1: "base_rgbd_camera"
+serial_no_camera_1: ""

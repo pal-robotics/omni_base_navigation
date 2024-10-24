@@ -4,14 +4,15 @@
   <version>2.5.0</version>
   <description>omni_base-specific launch files needed to run
     navigation on the omni_base robot.</description>
-  <author email="yue.erro@pal-robotics.com">Yue Erro</author>
+  <author email="antonio.brandi@pal-robotics.com">Antonio Brandi</author>
   <author email="andrea.capodacqua@pal-robotics.com">Andrea Capodacqua</author>
-  <maintainer email="yue.erro@pal-robotics.com">Yue Erro</maintainer>
+  <maintainer email="antonio.brandi@pal-robotics.com">Antonio Brandi</maintainer>
   <license>Apache License 2.0</license>
 
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
 
   <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+  <build_depend condition="$PAL_DISTRO >= alum">pal_navigation_cfg_cmake</build_depend>
 
   <exec_depend>omni_base_laser_sensors</exec_depend>
   <exec_depend>pal_maps</exec_depend>

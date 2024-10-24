@@ -1,4 +1,4 @@
-localization:
+laser_w_composition_hokuyo:
   launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
-          pipeline:=localization
+          pipeline:=laser_w_composition_hokuyo
           robot_name:=@robot_type@"

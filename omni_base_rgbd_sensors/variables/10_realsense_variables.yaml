@@ -1,0 +1,7 @@
+#* Variables that will be used to configure the Navigation,
+#* SLAM, Localization and sensors parameters for TIAGo OMNI Base Robot
+#camera_0 remappings:
+serial_no_camera_0: "_XXXXXXXXXXXX"
+
+#camera_1 remappings:
+serial_no_camera_1: "_XXXXXXXXXXXX"
