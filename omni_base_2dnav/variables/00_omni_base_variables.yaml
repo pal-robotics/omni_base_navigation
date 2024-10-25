@@ -24,11 +24,3 @@ laser_frame_0: "base_rear_laser_link"
 #laser_1 remappings:
 scan_raw_topic_1: "/scan_front_raw"
 laser_frame_1: "base_front_laser_link"
-
-#camera_0 remappings:
-name_camera_0: "roof_rgbd_camera"
-serial_no_camera_0: ""
-
-#camera_1 remappings:
-name_camera_1: "base_rgbd_camera"
-serial_no_camera_1: ""
