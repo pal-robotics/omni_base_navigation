@@ -115,7 +115,7 @@ def private_nav_function(context, *args, **kwargs):
         launch_arguments={
             "pipeline": "navigation",
             "robot_name": "omni_base",
-        }
+        },
     )
     slam_bringup_launch = include_scoped_launch_py_description(
         pkg_name="pal_navigation_cfg_utils",
@@ -141,7 +141,7 @@ def private_nav_function(context, *args, **kwargs):
         launch_arguments={
             "pipeline": "laser_sim",
             "robot_name": "omni_base",
-        }
+        },
     )
 
     rviz_node = Node(
