@@ -1,4 +1,4 @@
-laser_w_composition_hokuyo:
+rgbd_w_composition:
   launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
-          pipeline:=laser_w_composition_hokuyo
+          pipeline:=rgbd_w_composition_d435i
           robot_name:=@robot_type@"

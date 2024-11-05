@@ -1,4 +1,4 @@
-laser_w_composition_sick_571:
+rgbd:
   launch: "pal_navigation_cfg_utils pipeline_executor.launch.py
-          pipeline:=laser_w_composition_sick_571
+          pipeline:=rgbd_d435i
           robot_name:=@robot_type@"
