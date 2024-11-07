@@ -1,6 +1,6 @@
-rgbd_w_composition_d435i:
-  containers:
-    rgbd_container:
+omni_base:
+  rgbd_realsense-d435i:
+    nodes: 
       roof_rgbd_camera:
         app: realsense
         params: [d435i_rgbd_low_contrast]
