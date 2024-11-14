@@ -2,6 +2,19 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* disable costmap filters for normal nav
+* register modules
+* add multi-robot support
+* typos
+* restore laser modules
+* moved camera-related variables to rgbd packag
+* remove dependency from pal_nav2_bringup
+* use mppi
+* register nav variables and pipelines
+* Contributors: antoniobrandi
+
 2.5.0 (2024-10-23)
 ------------------
 * using MPPI
