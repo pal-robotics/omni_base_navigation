@@ -2,6 +2,11 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* start rviz with use_public_sim
+* Contributors: antoniobrandi
+
 2.6.0 (2024-11-14)
 ------------------
 * disable costmap filters for normal nav

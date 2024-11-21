@@ -2,6 +2,9 @@
 Changelog for package omni_base_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.6.0 (2024-11-14)
 ------------------
 * register modules

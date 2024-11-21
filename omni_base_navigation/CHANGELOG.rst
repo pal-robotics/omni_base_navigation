@@ -2,6 +2,9 @@
 Changelog for package omni_base_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.6.0 (2024-11-14)
 ------------------
 * register nav variables and pipelines
