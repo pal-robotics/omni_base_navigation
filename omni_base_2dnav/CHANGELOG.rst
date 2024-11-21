@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.6.1 (2024-11-21)
+------------------
 * start rviz with use_public_sim
 * Contributors: antoniobrandi
 
