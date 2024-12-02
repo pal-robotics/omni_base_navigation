@@ -2,8 +2,8 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.7.0 (2024-12-02)
+------------------
 * nav deps and specifics
 * fix dep
 * Contributors: andreacapodacqua, antoniobrandi
