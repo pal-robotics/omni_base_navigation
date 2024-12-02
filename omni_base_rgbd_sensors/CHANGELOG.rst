@@ -2,6 +2,11 @@
 Changelog for package omni_base_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* nav deps and specifics
+* Contributors: antoniobrandi
+
 2.6.1 (2024-11-21)
 ------------------
 
