@@ -5,10 +5,10 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 if(pal_navigation_cfg_cmake_FOUND)
-  pal_navigation_cfg_register_pipeline(pipeline/00_rgbd_realsense-d435.yaml
-                      pipeline/00_rgbd_realsense-d435i.yaml
-                      pipeline/00_rgbd_w_composition_realsense-d435.yaml
-                      pipeline/00_rgbd_w_composition_realsense-d435i.yaml)
+  pal_navigation_cfg_register_pipeline(pipeline/00_rgbd_cobra_realsense-d435.yaml
+                      pipeline/00_rgbd_cobra_realsense-d435i.yaml
+                      pipeline/00_rgbd_realsense-d435.yaml
+                      pipeline/00_rgbd_realsense-d435i.yaml)
   pal_navigation_cfg_register_variables(variables/10_realsense_variables.yaml)
 elseif(DEFINED ENV{PAL_DISTRO})
   message(FATAL_ERROR "The pal_navigation_cfg_cmake package was not found. Pipelines not registered.")

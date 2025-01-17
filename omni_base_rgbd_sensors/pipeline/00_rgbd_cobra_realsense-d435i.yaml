@@ -1,5 +1,5 @@
 omni_base:
-  rgbd_w_composition_realsense-d435i:
+  rgbd_cobra_realsense-d435i:
     containers:
       rgbd_container:
         roof_rgbd_camera:
