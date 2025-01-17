@@ -2,6 +2,11 @@
 Changelog for package omni_base_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* support single camera
+* Contributors: antoniobrandi
+
 2.7.0 (2024-12-02)
 ------------------
 * nav deps and specifics
