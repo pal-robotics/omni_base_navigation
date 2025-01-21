@@ -2,6 +2,11 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added support to multiple topic remappings
+* Contributors: andreacapodacqua
+
 2.8.0 (2025-01-17)
 ------------------
 
