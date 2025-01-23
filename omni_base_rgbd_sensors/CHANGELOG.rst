@@ -2,6 +2,11 @@
 Changelog for package omni_base_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* support camera_model and add_on_module
+* Contributors: antoniobrandi
+
 2.9.0 (2025-01-21)
 ------------------
 
