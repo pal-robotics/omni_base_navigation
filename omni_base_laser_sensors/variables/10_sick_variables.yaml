@@ -2,7 +2,7 @@
 #* SLAM, Localization and sensors parameters for TIAGo OMNI Base Robot
 omni_base:
   #laser_0 remappings:
-  device_number_laser_0: 0
+  serial_number_laser_0: "''"
 
   #laser_1 remappings:
-  device_number_laser_1: 1
+  serial_number_laser_1: "''"
