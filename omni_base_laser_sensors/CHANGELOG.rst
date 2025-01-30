@@ -2,6 +2,13 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* uniform serial_number in all laser
+* pass sn down as string
+* using serial_number for sick lasers
+* Contributors: antoniobrandi
+
 2.10.0 (2025-01-23)
 -------------------
 
