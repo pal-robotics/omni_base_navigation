@@ -2,6 +2,11 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update omni_base_nav_bringup.launch.py
+* Contributors: antoniobrandi
+
 2.11.0 (2025-01-30)
 -------------------
 
