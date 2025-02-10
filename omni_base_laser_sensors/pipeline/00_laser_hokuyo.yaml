@@ -6,13 +6,13 @@ omni_base:
         params: [urg_04lx_ug01]
         variables:
           serial_port: /dev/ttyACM${serial_number_laser_0}
-        remappings: ["/scan", "${scan_raw_topic_0}"]
+        remappings: [["/scan", "${scan_raw_topic_0}"]]
       urg_driver_front:
         app: urg_driver
         params: [urg_04lx_ug01]
         variables:
           serial_port: /dev/ttyACM${serial_number_laser_1}
-        remappings: ["/scan", "${scan_raw_topic_1}"]
+        remappings: [["/scan", "${scan_raw_topic_1}"]]
       laserscan_multi_merger:
         app: laserscan_multi_merger
         params: [default]
