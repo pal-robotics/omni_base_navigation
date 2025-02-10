@@ -2,6 +2,11 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix hokuyo remappings
+* Contributors: andreacapodacqua
+
 2.12.0 (2025-02-04)
 -------------------
 
