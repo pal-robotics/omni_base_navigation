@@ -2,8 +2,8 @@
 Changelog for package omni_base_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.13.0 (2025-04-03)
+-------------------
 * pal_configuration adoption
 * Contributors: antoniobrandi
 
