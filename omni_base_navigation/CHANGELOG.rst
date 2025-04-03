@@ -2,6 +2,11 @@
 Changelog for package omni_base_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* pal_configuration adoption
+* Contributors: antoniobrandi
+
 2.12.1 (2025-02-10)
 -------------------
 
