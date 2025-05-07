@@ -2,6 +2,11 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix hokuyo
+* Contributors: antoniobrandi
+
 2.13.0 (2025-04-03)
 -------------------
 * pal_configuration adoption
