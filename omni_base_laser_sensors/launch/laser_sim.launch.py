@@ -25,7 +25,7 @@ def generate_launch_description():
     laser_scan_merger_node = 'laserscan_multi_merger'
     pal_laser_filters_node = 'pal_laser_filters'
     dlo_node = 'direct_laser_odometry'
-    lifecycle_manager_node = 'lifecycle_manager_laser_sim'
+    lifecycle_manager_node = 'lifecycle_manager_laser'
 
     laser_scan_merger_config = get_pal_configuration(
         pkg='ira_laser_tools',

@@ -18,7 +18,10 @@ if(pal_configuration_cmake_FOUND)
   )
   pal_register_configs(
     CONFIGS
-      params/10_nav2_lifecycle_manager_laser_omni_base.yaml
+      params/10_nav2_lifecycle_manager_laser_hokuyo_omni_base.yaml
+      params/10_nav2_lifecycle_manager_laser_sick-561_omni_base.yaml
+      params/10_nav2_lifecycle_manager_laser_sick-571_omni_base.yaml
+      params/10_nav2_lifecycle_manager_laser_sim_omni_base.yaml
     RESOURCE_NAME
       nav2_lifecycle_manager
   )
