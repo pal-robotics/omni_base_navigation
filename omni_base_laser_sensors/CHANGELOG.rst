@@ -2,6 +2,11 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix laser sim
+* Contributors: antoniobrandi
+
 2.14.0 (2025-05-07)
 -------------------
 * fix hokuyo
