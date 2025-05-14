@@ -2,6 +2,11 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added pal_maps exec_depend
+* Contributors: martinaannicelli
+
 2.15.0 (2025-05-07)
 -------------------
 
