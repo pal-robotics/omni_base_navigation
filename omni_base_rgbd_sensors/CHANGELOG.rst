@@ -2,6 +2,11 @@
 Changelog for package omni_base_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* support namespace
+* Contributors: antoniobrandi
+
 2.16.0 (2025-05-14)
 -------------------
 
