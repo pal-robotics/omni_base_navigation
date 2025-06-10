@@ -14,8 +14,8 @@ if(pal_configuration_cmake_FOUND)
     CONFIGS
       params/00_rgbd_cobra_realsense-d435_omni_base.yaml
       params/00_rgbd_cobra_realsense-d435i_omni_base.yaml
-      params/00_rgbd_single_realsense-d435_omni_base.yaml
-      params/00_rgbd_single_realsense-d435i_omni_base.yaml
+      params/00_rgbd_horizon_realsense-d435_omni_base.yaml
+      params/00_rgbd_horizon_realsense-d435i_omni_base.yaml
     RESOURCE_NAME
       realsense_camera_cfg
   )
