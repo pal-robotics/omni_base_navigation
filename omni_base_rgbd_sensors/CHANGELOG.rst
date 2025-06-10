@@ -2,8 +2,8 @@
 Changelog for package omni_base_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.18.0 (2025-06-10)
+-------------------
 * renamed launch file
 * update name of add-on-module
 * single camera integration
