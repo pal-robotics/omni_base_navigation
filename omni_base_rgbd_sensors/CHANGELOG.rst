@@ -2,6 +2,13 @@
 Changelog for package omni_base_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* renamed launch file
+* update name of add-on-module
+* single camera integration
+* Contributors: andreacapodacqua
+
 2.17.0 (2025-06-03)
 -------------------
 * support namespace
