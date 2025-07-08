@@ -12,12 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import os
+
+from ament_index_python import get_package_share_directory
+
 from dataclasses import dataclass
 
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
-from launch_ros.actions import ComposableNodeContainer
+from launch_ros.actions import ComposableNodeContainer, Node
 from launch_ros.descriptions import ComposableNode
 
 from launch_pal import get_pal_configuration
@@ -155,3 +159,16 @@ def declare_actions(
     )
 
     launch_description.add_action(laser_container)
+
+    laser_analyzer = Node(
+        package='diagnostic_aggregator',
+        executable='add_analyzer',
+        namespace='omni_base_laser_sensors',
+        output='screen',
+        emulate_tty=True,
+        parameters=[
+            os.path.join(
+                get_package_share_directory('omni_base_laser_sensors'),
+                'config', 'laser_analyzers.yaml')],
+    )
+    launch_description.add_action(laser_analyzer)

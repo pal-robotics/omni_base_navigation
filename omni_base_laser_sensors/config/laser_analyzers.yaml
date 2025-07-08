@@ -1,0 +1,15 @@
+/omni_base_laser_sensors/add_analyzer_node:
+  ros__parameters:
+    path: Diagnostics
+    navigation:
+      type: 'diagnostic_aggregator/AnalyzerGroup'
+      path: Navigation
+      analyzers:
+        laser:
+          type: diagnostic_aggregator/GenericAnalyzer
+          path: Laser
+          regex: [
+            '^(front|rear)_laser: /scan_(front|rear)_raw topic status',
+            '^(front|rear)_laser: Hardware Status',
+            '^(front|rear)_laser: Laser Scan topic status',
+          ]
