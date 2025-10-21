@@ -78,7 +78,7 @@ def declare_actions(
                 package='realsense2_camera',
                 plugin='realsense2_camera::RealSenseNodeFactory',
                 name=camera_node,
-                namespace='rgbd_camera',
+                namespace='',
                 parameters=camera_config["parameters"],
                 remappings=camera_config["remappings"],
             )
