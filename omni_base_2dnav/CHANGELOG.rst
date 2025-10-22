@@ -2,6 +2,9 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.19.0 (2025-07-10)
 -------------------
 * Add diagnostic analyzers
