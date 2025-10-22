@@ -2,8 +2,8 @@
 Changelog for package omni_base_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.19.1 (2025-10-22)
+-------------------
 * removed camera namespace from realsense driver
 * Contributors: martinaannicelli
 
