@@ -2,6 +2,11 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Use path drawer
+* Contributors: antoniobrandi
+
 2.19.1 (2025-10-22)
 -------------------
 
