@@ -1,0 +1,10 @@
+/floor_filter:
+  use_if:
+    robot_type: omni_base
+    camera_model: realsense-d435i
+    add_on_module: horizon
+  use_preset: "floor_filter_far.yaml"
+
+  remappings:
+    input: "${namespace}/rgbd_camera/depth/color/points"
+    output: "${namespace}/rgbd_camera/obstacles/points"

@@ -21,7 +21,9 @@
   <exec_depend condition="$PAL_DISTRO >= alum">realsense2_camera</exec_depend>
   <exec_depend condition="$PAL_DISTRO >= alum">realsense_camera_cfg</exec_depend>
   <exec_depend condition="$PAL_DISTRO >= alum">ros2launch</exec_depend>
-  <exec_depend condition="$PAL_DISTRO >= alum">structure_camera_cfg</exec_depend>  
+  <exec_depend condition="$PAL_DISTRO >= alum">structure_camera_cfg</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">pcl_ros</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">pal_pcl</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
