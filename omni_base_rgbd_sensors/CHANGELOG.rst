@@ -2,6 +2,9 @@
 Changelog for package omni_base_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.21.0 (2025-12-11)
 -------------------
 * Point Cloud filter pipeline

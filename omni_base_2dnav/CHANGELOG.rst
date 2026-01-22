@@ -2,6 +2,11 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added navigation skills
+* Contributors: antoniobrandi
+
 2.21.0 (2025-12-11)
 -------------------
 
