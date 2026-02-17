@@ -2,6 +2,11 @@
 Changelog for package omni_base_laser_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix wrong preset
+* Contributors: andreacapodacqua
+
 2.22.0 (2026-01-22)
 -------------------
 
