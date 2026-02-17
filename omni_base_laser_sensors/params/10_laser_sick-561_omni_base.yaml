@@ -1,5 +1,5 @@
 /rear_laser:
-  use_preset: "sick_driver.yaml"
+  use_preset: "sick_561.yaml"
   use_if:
     base_type: omni_base
     laser_model: sick-561
@@ -9,7 +9,7 @@
     frame_id: "base_rear_laser_link"
 
 /front_laser:
-  use_preset: "sick_driver.yaml"
+  use_preset: "sick_561.yaml"
   use_if:
     base_type: omni_base
     laser_model: sick-561
