@@ -1,2 +1,2 @@
 localization:
-  launch: "omni_base_2dnav localization.launch.py"
+  launch: "omni_base_2dnav localization.launch.py advanced_navigation:=@advanced_navigation@"
