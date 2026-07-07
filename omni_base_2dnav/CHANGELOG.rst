@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.23.0 (2026-07-07)
+-------------------
 * adapt eulero migration
 * Contributors: antoniobrandi
 
