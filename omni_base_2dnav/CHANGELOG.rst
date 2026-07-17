@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.24.0 (2026-07-17)
+-------------------
 * start apps using localization manager
 * Contributors: antoniobrandi
 
