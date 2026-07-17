@@ -2,6 +2,11 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* start apps using localization manager
+* Contributors: antoniobrandi
+
 2.23.0 (2026-07-07)
 -------------------
 * adapt eulero migration
