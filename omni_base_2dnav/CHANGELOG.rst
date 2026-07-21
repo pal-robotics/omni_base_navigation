@@ -2,6 +2,11 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix use sim time
+* Contributors: antoniobrandi
+
 2.24.0 (2026-07-17)
 -------------------
 * start apps using localization manager
