@@ -2,8 +2,8 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.24.1 (2026-07-21)
+-------------------
 * fix use sim time
 * Contributors: antoniobrandi
 
