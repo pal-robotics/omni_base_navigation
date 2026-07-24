@@ -36,6 +36,7 @@ class LaunchArguments(LaunchArgumentsBase):
     advanced_navigation: DeclareLaunchArgument = CommonArgs.advanced_navigation
     use_sim_time: DeclareLaunchArgument = CommonArgs.use_sim_time
 
+
 def generate_launch_description():
 
     # Create the launch description and populate
