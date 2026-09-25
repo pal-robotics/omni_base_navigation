@@ -37,6 +37,12 @@ if(pal_configuration_cmake_FOUND)
     RESOURCE_NAME
       nav2_planner
   )
+  pal_register_configs(
+    CONFIGS
+      params/10_nav2_bt_navigator_omni_base.yaml
+    RESOURCE_NAME
+      nav2_bt_navigator
+  )
 elseif(DEFINED ENV{PAL_DISTRO})
   message(FATAL_ERROR "The pal_configuration_cmake package was not found. Configurations not registered.")
 endif()
