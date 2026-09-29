@@ -2,6 +2,11 @@
 Changelog for package omni_base_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Use intra process communication
+* Contributors: antoniobrandi
+
 2.24.2 (2026-07-24)
 -------------------
 
