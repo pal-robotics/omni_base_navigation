@@ -61,7 +61,7 @@ def filters(context, launch_description):
             pkg='pcl_ros',
             node=fllor_filter_node,
             ld=launch_description,
-            cmdline_args=False,
+            cmdline_args=['use_sim_time'],
         )
 
         camera_components = LoadComposableNodes(
@@ -88,13 +88,13 @@ def filters(context, launch_description):
             pkg='pcl_ros',
             node=base_floor_filter,
             ld=launch_description,
-            cmdline_args=False,
+            cmdline_args=['use_sim_time'],
         )
         roof_floor_filter_config = get_pal_configuration(
             pkg='pcl_ros',
             node=roof_floor_filter,
             ld=launch_description,
-            cmdline_args=False,
+            cmdline_args=['use_sim_time'],
         )
 
         point_cloud_filters = LoadComposableNodes(
