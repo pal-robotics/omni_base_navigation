@@ -2,6 +2,11 @@
 Changelog for package omni_base_2dnav
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added bt navigator with no spin by default
+* Contributors: Martina Annicelli
+
 2.25.0 (2026-09-29)
 -------------------
 
