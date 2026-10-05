@@ -2,6 +2,11 @@
 Changelog for package omni_base_rgbd_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* adding use sim time arg
+* Contributors: martinaannicelli
+
 2.26.0 (2026-10-05)
 -------------------
 
